@@ -1,0 +1,2 @@
+# Add your ad network lines here once your publisher account is approved, e.g.:
+# adsterra.com, YOUR-PUBLISHER-ID, DIRECT
