@@ -6,7 +6,7 @@
 <title>Berlin to New York Time Converter &amp; Meeting Planner</title>
 <meta name="description" content="Convert Berlin to New York time instantly. New York is 6h behind Berlin. Check clock changes and find the best meeting time.">
 <meta name="keywords" content="Berlin to New York time, Berlin New York time difference, Berlin to New York time converter, New York to Berlin time">
-<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://clocksync.kraj.workers.dev/berlin-to-new-york-time/">
 <meta name="theme-color" content="#0D1B29">
 <!-- Google Search Console: paste your verification tag here -->
@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>(function(){try{var t=localStorage.getItem('cs_theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.classList.toggle('dark',t==='dark')}catch(e){}})();</script>
-<link rel="stylesheet" href="../assets/style.css?v=a4af3cc1">
+<link rel="stylesheet" href="../assets/style.css?v=1b13fcec">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"Berlin to New York Time Converter & Meeting Planner","url":"https://clocksync.kraj.workers.dev/berlin-to-new-york-time/","applicationCategory":"BusinessApplication","operatingSystem":"Any (web browser)","description":"Visual time zone converter and meeting planner with daylight saving alerts and stock market countdowns.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Visual 24-hour timeline for many cities","Working-hours overlap finder","Daylight saving change alerts","Recurring meeting drift check","Plain-language quick convert","Stock market open and close countdowns","Copy-ready meeting invite, Google Calendar link and .ics file"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clocksync.kraj.workers.dev/"},{"@type":"ListItem","position":2,"name":"Berlin to New York","item":"https://clocksync.kraj.workers.dev/berlin-to-new-york-time/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the time difference between Berlin and New York?","acceptedAnswer":{"@type":"Answer","text":"New York is usually 6 hours behind Berlin. In 2026 the gap is 6 hours for most of the year, but 5 hours from about Mar 8 to Mar 28 and from about Oct 25 to Oct 31. In 2027 the gap is 6 hours for most of the year, but 5 hours from about Mar 14 to Mar 27 and from about Oct 31 to Nov 6. This happens because the two places change their clocks on different dates."}},{"@type":"Question","name":"What time is it in New York when it is 9 AM in Berlin?","acceptedAnswer":{"@type":"Answer","text":"When it is 9:00 AM in Berlin, it is 3:00 AM in New York at the usual time difference."}},{"@type":"Question","name":"What is the best time for a meeting between Berlin and New York?","acceptedAnswer":{"@type":"Answer","text":"With a standard 9 AM to 5 PM working day, the shared window is 3:00 PM to 5:00 PM in Berlin, which is 9:00 AM to 11:00 AM in New York."}},{"@type":"Question","name":"Does daylight saving time affect Berlin to New York?","acceptedAnswer":{"@type":"Answer","text":"Yes. In 2026 the gap is 6 hours for most of the year, but 5 hours from about Mar 8 to Mar 28 and from about Oct 25 to Oct 31. In 2027 the gap is 6 hours for most of the year, but 5 hours from about Mar 14 to Mar 27 and from about Oct 31 to Nov 6. Always re-check recurring meetings around those dates. The converter above shows an alert before the change happens."}}]}]}</script>
 <script type="application/json" id="cs-config">{"root":"../","cities":["Europe/Berlin","America/New_York"],"page":"berlin-to-new-york-time"}</script>
 </head>
@@ -39,14 +39,17 @@
       <svg width="36" height="36" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="var(--ink)"/><circle cx="22" cy="22" r="15" fill="none" stroke="var(--brass)" stroke-width="3"/><path d="M22 12v10l7 4" fill="none" stroke="var(--brass)" stroke-width="3" stroke-linecap="round"/></svg>
       <span class="font-display font-extrabold text-lg">Global ClockSync</span>
     </a>
-    <nav class="hidden sm:flex items-center gap-5 text-sm font-semibold" aria-label="Main">
-      <a href="../" class="hover:underline underline-offset-4">Converter</a><a href="../nyse-trading-hours/" class="hover:underline underline-offset-4">Market hours</a><a href="../about/" class="hover:underline underline-offset-4">About</a>
+    <nav class="hidden md:flex items-center gap-5 text-sm font-semibold" aria-label="Main">
+      <a href="../" class="hover:underline underline-offset-4">Converter</a><a href="../world-clock/" class="hover:underline underline-offset-4">World clock</a><a href="../time-zones/" class="hover:underline underline-offset-4">Time zones</a><a href="../daylight-saving-time-changes/" class="hover:underline underline-offset-4">DST dates</a><a href="../nyse-trading-hours/" class="hover:underline underline-offset-4">Market hours</a>
     </nav>
     <div class="flex items-center gap-2">
       <button id="fmtToggle" class="btn" type="button" aria-pressed="false" title="Switch between 12-hour and 24-hour time">12h</button>
       <button id="themeToggle" class="btn" type="button" aria-label="Switch between dark and light mode" title="Dark / light mode"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></button>
     </div>
   </div>
+  <nav class="mnav md:hidden mt-3" aria-label="Main (mobile)">
+    <a class="chip" href="../">Converter</a><a class="chip" href="../world-clock/">World clock</a><a class="chip" href="../time-zones/">Time zones</a><a class="chip" href="../daylight-saving-time-changes/">DST dates</a><a class="chip" href="../nyse-trading-hours/">Market hours</a>
+  </nav>
 </header>
 
 <section class="ad-slot mx-auto max-w-6xl px-4 mt-4" data-ad="top" aria-label="Advertisement" hidden>
@@ -69,13 +72,15 @@
     <p class="text-sm muted mt-1">Drag anywhere on the timeline (or use the slider) and every city moves together.</p>
     <div class="card mt-3 p-4">
       <label class="lbl" for="nlInput">Quick convert: type it the way you would say it</label>
-      <div class="flex gap-2"><input id="nlInput" class="field" type="text" autocomplete="off" placeholder="3pm EST to IST, Tokyo" aria-describedby="nlMsg"><button id="nlBtn" class="btn btn-primary" type="button">Convert</button></div>
+      <div class="flex gap-2"><input id="nlInput" class="field" type="text" autocomplete="off" placeholder="9 AM New York to London, Tokyo" aria-describedby="nlMsg"><button id="nlBtn" class="btn btn-primary" type="button">Convert</button></div>
       <p id="nlMsg" class="text-sm font-semibold mt-2" aria-live="polite"></p>
+      <div id="nlChoices" class="mt-2 flex flex-wrap gap-2"></div>
       <div id="nlExamples" class="mt-2 flex flex-wrap gap-2">
-        <button type="button" class="chip" data-nl="3pm EST to IST">3pm EST to IST</button>
-        <button type="button" class="chip" data-nl="9:30 am London to Tokyo, Sydney">9:30 am London to Tokyo, Sydney</button>
-        <button type="button" class="chip" data-nl="tomorrow 14:00 Kathmandu to New York">tomorrow 14:00 Kathmandu to New York</button>
-        <button type="button" class="chip" data-nl="10 pm PST to NPT">10 pm PST to NPT</button>
+        <button type="button" class="chip" data-nl="9 AM New York to London">9 AM New York to London</button>
+        <button type="button" class="chip" data-nl="14:30 Tokyo to Los Angeles">14:30 Tokyo to Los Angeles</button>
+        <button type="button" class="chip" data-nl="8 PM Sydney to Toronto tomorrow">8 PM Sydney to Toronto tomorrow</button>
+        <button type="button" class="chip" data-nl="10 AM London to New York next Monday">10 AM London to New York next Monday</button>
+        <button type="button" class="chip" data-nl="3 PM IST to New York">3 PM IST to New York</button>
       </div>
     </div>
     <div class="card mt-3 p-4">
@@ -131,6 +136,27 @@
         <button id="resetBtn" class="btn" type="button"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>Reset</button>
       </div>
     </div>
+
+    <section id="finder" class="card mt-4 p-4" aria-labelledby="finder-h">
+      <h3 id="finder-h" class="font-display text-lg font-bold">Fair Meeting Time Finder</h3>
+      <p class="text-sm muted mt-1">Ranks meeting times so nobody is pushed far outside their working day. Set each person's hours, choose a date range and press the button.</p>
+      <div class="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-4">
+        <div><label class="lbl" for="fdDate">Start date (base city)</label><input id="fdDate" type="date" class="field"></div>
+        <div><label class="lbl" for="fdDays">Search</label><select id="fdDays" class="field"><option value="1">1 day</option><option value="3" selected>3 days</option><option value="5">5 days</option><option value="7">7 days</option><option value="14">14 days</option></select></div>
+        <div><label class="lbl" for="fdDur">Meeting length</label><select id="fdDur" class="field"><option value="30">30 minutes</option><option value="45">45 minutes</option><option value="60" selected>1 hour</option><option value="90">1.5 hours</option><option value="120">2 hours</option><option value="180">3 hours</option></select></div>
+        <label class="flex items-end gap-2 pb-2 text-sm font-semibold cursor-pointer"><input id="fdWeekend" type="checkbox" checked class="w-4 h-4"> Weekends are non-working days</label>
+      </div>
+      <div class="mt-4"><p class="lbl">Working hours for each person (starts, ends)</p><div id="fdParts" class="space-y-2"></div></div>
+      <div class="mt-4"><button id="fdGo" class="btn btn-primary" type="button"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M22 12h-4M6 12H2M12 6V2M12 22v-4"/></svg>Find fair times</button></div>
+      <div id="fdOut" class="mt-4" aria-live="polite"></div>
+      <details class="mt-4"><summary class="text-sm font-semibold cursor-pointer">How the score works</summary>
+        <div class="text-sm muted mt-2 space-y-2">
+          <p>Every person gets a penalty for the worst moment of the meeting: inside working hours 0, early morning (6 AM until work starts) 2, evening (work ends until 10 PM) 2, night (10 PM to 6 AM) 6. A weekend day adds 4.</p>
+          <p>Slots are ranked by the smallest worst penalty first, then by the smallest total penalty, so one person is not sacrificed for the others. Results are at least two hours apart. Weekends are Saturday and Sunday except in Riyadh, Doha, Tel Aviv, Cairo and Dhaka (Friday and Saturday).</p>
+          <p>The score is a guide, not a promise that everyone is happy. A slot is never called perfect.</p>
+        </div>
+      </details>
+    </section>
   </section>
 
   <section id="recurring" class="card mt-4 p-4" aria-labelledby="recur-h" hidden>
@@ -189,7 +215,7 @@
   </tbody></table></div>
     <h2>Frequently asked questions</h2><div class="mt-2"><details class="faq"><summary>What is the time difference between Berlin and New York?</summary><p>New York is usually 6 hours behind Berlin. In 2026 the gap is 6 hours for most of the year, but 5 hours from about Mar 8 to Mar 28 and from about Oct 25 to Oct 31. In 2027 the gap is 6 hours for most of the year, but 5 hours from about Mar 14 to Mar 27 and from about Oct 31 to Nov 6. This happens because the two places change their clocks on different dates.</p></details><details class="faq"><summary>What time is it in New York when it is 9 AM in Berlin?</summary><p>When it is 9:00 AM in Berlin, it is 3:00 AM in New York at the usual time difference.</p></details><details class="faq"><summary>What is the best time for a meeting between Berlin and New York?</summary><p>With a standard 9 AM to 5 PM working day, the shared window is 3:00 PM to 5:00 PM in Berlin, which is 9:00 AM to 11:00 AM in New York.</p></details><details class="faq"><summary>Does daylight saving time affect Berlin to New York?</summary><p>Yes. In 2026 the gap is 6 hours for most of the year, but 5 hours from about Mar 8 to Mar 28 and from about Oct 25 to Oct 31. In 2027 the gap is 6 hours for most of the year, but 5 hours from about Mar 14 to Mar 27 and from about Oct 31 to Nov 6. Always re-check recurring meetings around those dates. The converter above shows an alert before the change happens.</p></details></div>
     <h2>Related conversions</h2>
-    <div class="linkgrid mt-3"><a href="../new-york-to-london-time/">New York to London time</a><a href="../new-york-to-india-time/">New York to India time</a><a href="../berlin-to-india-time/">Berlin to India time</a><a href="../new-york-to-nepal-time/">New York to Nepal time</a><a href="../new-york-to-pakistan-time/">New York to Pakistan time</a><a href="../new-york-to-bangladesh-time/">New York to Bangladesh time</a><a href="../new-york-to-philippines-time/">New York to Philippines time</a><a href="../new-york-to-dubai-time/">New York to Dubai time</a><a href="../new-york-to-tokyo-time/">New York to Tokyo time</a><a href="../new-york-to-sydney-time/">New York to Sydney time</a><a href="../nigeria-to-new-york-time/">Nigeria to New York time</a><a href="../kenya-to-new-york-time/">Kenya to New York time</a><a href="../south-africa-to-new-york-time/">South Africa to New York time</a><a href="../nyse-trading-hours/">NYSE trading hours</a><a href="../">All time zones converter</a></div>
+    <div class="linkgrid mt-3"><a href="../new-york-to-london-time/">New York to London time</a><a href="../new-york-to-india-time/">New York to India time</a><a href="../new-york-to-nepal-time/">New York to Nepal time</a><a href="../new-york-to-philippines-time/">New York to Philippines time</a><a href="../new-york-to-tokyo-time/">New York to Tokyo time</a><a href="../new-york-to-sydney-time/">New York to Sydney time</a><a href="../nyse-trading-hours/">NYSE trading hours</a><a href="../">All time zones converter</a><a href="../world-clock/">World clock</a><a href="../daylight-saving-time-changes/">Daylight saving dates</a></div>
   </section>
   <section class="ad-slot mt-8" data-ad="inpage" aria-label="Advertisement" hidden>
     <span class="ad-label">Advertisement</span>
@@ -210,13 +236,16 @@
         <p class="font-semibold">Tools</p>
         <ul class="mt-2 space-y-1.5">
           <li><a class="hover:underline" href="../">Time zone converter</a></li>
+          <li><a class="hover:underline" href="../world-clock/">World clock</a></li>
+          <li><a class="hover:underline" href="../time-zones/">Time zone directory</a></li>
+          <li><a class="hover:underline" href="../daylight-saving-time-changes/">Daylight saving dates</a></li>
           <li><a class="hover:underline" href="../nyse-trading-hours/">NYSE trading hours</a></li><li><a class="hover:underline" href="../lse-trading-hours/">LSE trading hours</a></li><li><a class="hover:underline" href="../tokyo-stock-exchange-hours/">TSE trading hours</a></li>
         </ul>
       </div>
       <div>
         <p class="font-semibold">Popular conversions</p>
         <ul class="mt-2 space-y-1.5">
-          <li><a class="hover:underline" href="../new-york-to-london-time/">New York to London</a></li><li><a class="hover:underline" href="../new-york-to-india-time/">New York to India</a></li><li><a class="hover:underline" href="../new-york-to-nepal-time/">New York to Nepal</a></li><li><a class="hover:underline" href="../new-york-to-dubai-time/">New York to Dubai</a></li><li><a class="hover:underline" href="../new-york-to-tokyo-time/">New York to Tokyo</a></li><li><a class="hover:underline" href="../los-angeles-to-sydney-time/">Los Angeles to Sydney</a></li>
+          <li><a class="hover:underline" href="../new-york-to-london-time/">New York to London</a></li><li><a class="hover:underline" href="../los-angeles-to-london-time/">Los Angeles to London</a></li><li><a class="hover:underline" href="../chicago-to-london-time/">Chicago to London</a></li><li><a class="hover:underline" href="../toronto-to-london-time/">Toronto to London</a></li><li><a class="hover:underline" href="../new-york-to-india-time/">New York to India</a></li><li><a class="hover:underline" href="../los-angeles-to-india-time/">Los Angeles to India</a></li>
         </ul>
       </div>
       <div>
@@ -242,6 +271,6 @@
 
 <!-- ADSTERRA_SOCIAL_BAR_AND_POPUNDER_SCRIPT  (paste the code in assets/ads-config.js, global field) -->
 <script src="../assets/ads-config.js"></script>
-<script src="../assets/app.js?v=a4af3cc1" defer></script>
+<script src="../assets/app.js?v=1b13fcec" defer></script>
 </body>
 </html>

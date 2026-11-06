@@ -1,6 +1,6 @@
 /* Global ClockSync service worker: offline support. Cache name changes on every build. */
-const V = 'cs-a4af3cc1';
-const CORE = ['./', 'assets/style.css?v=a4af3cc1', 'assets/app.js?v=a4af3cc1', 'assets/favicon.svg'];
+const V = 'cs-1b13fcec';
+const CORE = ['./', 'assets/style.css?v=1b13fcec', 'assets/app.js?v=1b13fcec', 'assets/favicon.svg'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(V).then(c => Promise.all(CORE.map(u => c.add(new URL(u, self.registration.scope).href).catch(() => {})))).then(() => self.skipWaiting()));
 });
